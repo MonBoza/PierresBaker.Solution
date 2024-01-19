@@ -6,7 +6,7 @@ namespace PierresBakery.Models
   public class Bread
   {
     public int BreadOrder { get; set; }
-    public int BreadPriceTotal => GetBreadPrice(BreadOrder);
+    public  int BreadPriceTotal => GetBreadPrice(BreadOrder);
     public Bread(int breadOrder)
     {
       BreadOrder = breadOrder;
@@ -24,7 +24,7 @@ namespace PierresBakery.Models
       }
       else
       {
-        breadPrice = breadPrice * BreadOrder;
+        breadPrice *= BreadOrder;
       }
       return breadPrice;
     }

@@ -7,7 +7,7 @@ namespace PierresBakery.Models
   public class Pastry
   {
     public int PastryOrder {get; set;}
-    public int PastryPriceTotal => GetPastryPrice(PastryOrder);
+    public  int PastryPriceTotal => GetPastryPrice(PastryOrder);
     public Pastry(int pastryOrder)
     {
       PastryOrder = pastryOrder;

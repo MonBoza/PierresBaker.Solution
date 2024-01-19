@@ -109,7 +109,7 @@ namespace PierresBakery.Tests
       Assert.AreEqual(2, result);
     }
     [TestMethod]
-    public void GetPastryPrice_ReturnsPastryPriceWithDiscountDivisbleBy4_Int()
+    public void GetPastryPrice_ReturnsPastryPriceWithDiscountDivisibleBy4_Int()
     {
       // Test 11
       int pastryOrder = 4;
