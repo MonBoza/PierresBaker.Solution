@@ -10,5 +10,10 @@ namespace PierresBakery.Models
     {
       BreadOrder = breadOrder;
     }
+    public int GetBreadPrice(int BreadOrder)
+    {
+        int breadPrice = 5;
+        return breadPrice * BreadOrder;
+    }
   }
 }

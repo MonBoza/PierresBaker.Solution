@@ -20,6 +20,7 @@ namespace PierresBakery.Tests
       int result = newBread.BreadOrder;
       Assert.AreEqual(breadOrder, result);
     }
+    [TestMethod]
     public void SetBread_ReturnsBread_Void()
     {
       Bread newBread = new Bread(1);
@@ -28,5 +29,13 @@ namespace PierresBakery.Tests
       int result = newBread.BreadOrder;
       Assert.AreEqual(updatedBreadOrder, result);
     }
-  }
+    [TestMethod]
+    public void GetBreadPrice_ReturnsBreadPrice_Int()
+    {
+      int breadOrder = 1;
+      Bread newBread = new Bread(breadOrder);
+      int result = newBread.GetBreadPrice(breadOrder);
+      Assert.AreEqual(5, result);
+    }
+  } 
 }
