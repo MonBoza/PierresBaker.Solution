@@ -32,10 +32,29 @@ namespace PierresBakery.Tests
     [TestMethod]
     public void GetBreadPrice_ReturnsBreadPrice_Int()
     {
+      // Test 4: Test the GetBreadPrice() method
       int breadOrder = 1;
       Bread newBread = new Bread(breadOrder);
       int result = newBread.GetBreadPrice(breadOrder);
       Assert.AreEqual(5, result);
+    }
+    [TestMethod]
+    public void GetBreadPrice_ReturnsBreadPriceWithDiscount_Int()
+    {
+      // Test 5: Test the GetBreadPrice() method with discount
+      int breadOrder = 3;
+      Bread newBread = new Bread(breadOrder);
+      int result = newBread.GetBreadPrice(breadOrder);
+      Assert.AreEqual(10, result);
+    }
+    [TestMethod]
+    public void GetBreadPrice_ReturnsBreadPriceWithDiscount_Int2()
+    {
+      // Test 6: Test the GetBreadPrice() method with discount
+      int breadOrder = 4;
+      Bread newBread = new Bread(breadOrder);
+      int result = newBread.GetBreadPrice(breadOrder);
+      Assert.AreEqual(20, result);
     }
   } 
 }

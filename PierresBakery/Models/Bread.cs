@@ -12,8 +12,15 @@ namespace PierresBakery.Models
     }
     public int GetBreadPrice(int BreadOrder)
     {
-        int breadPrice = 5;
-        return breadPrice * BreadOrder;
+      int breadPrice = 5;
+       if (BreadOrder % 3 == 0)
+      {
+        // if order is divisible by 3, subtract 5 from every third loaf
+        breadPrice = (breadPrice * BreadOrder) - ((BreadOrder / 3) * 5);
+      }
+      else if (BreadOrder % 3 != 0)
+      breadPrice = BreadOrder* 5;
+      return breadPrice;
     }
   }
 }
