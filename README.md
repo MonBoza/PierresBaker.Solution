@@ -1,4 +1,4 @@
-# (Application Name)
+# Pierre's Bakery
 
 #### (Brief Description of Application)
 
