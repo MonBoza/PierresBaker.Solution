@@ -1,11 +1,14 @@
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using PierresBakery.Models;
+using System.Collections.Generic;
+using System;
 
 namespace PierresBakery.Tests
 {
   [TestClass]
-  public class BreadTests
+  public class BreadTests 
   {
+   
     [TestMethod]
     public void BreadConstructor_CreatesInstanceOfBread_Bread()
     {
@@ -41,7 +44,7 @@ namespace PierresBakery.Tests
     [TestMethod]
     public void GetBreadPrice_ReturnsBreadPriceWithDiscount_Int()
     {
-      // Test 5: Test the GetBreadPrice() method with discount
+      // Test 5: Test the GetBreadPrice() method with discount I forgot to commit this test
       int breadOrder = 3;
       Bread newBread = new Bread(breadOrder);
       int result = newBread.GetBreadPrice(breadOrder);
@@ -50,11 +53,12 @@ namespace PierresBakery.Tests
     [TestMethod]
     public void GetBreadPrice_ReturnsBreadPriceWithDiscount_Int2()
     {
-      // Test 6: Test the GetBreadPrice() method with discount
-      int breadOrder = 4;
+      // Test 6: Test the GetBreadPrice() method with discount edge case
+      int breadOrder = 26;
       Bread newBread = new Bread(breadOrder);
       int result = newBread.GetBreadPrice(breadOrder);
-      Assert.AreEqual(20, result);
+      Assert.AreEqual(100, result);
     }
+    
   } 
 }
