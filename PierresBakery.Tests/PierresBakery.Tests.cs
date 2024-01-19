@@ -59,7 +59,15 @@ namespace PierresBakery.Tests
       int result = newBread.GetBreadPrice(breadOrder);
       Assert.AreEqual(100, result);
     }
-    
+    [TestMethod]
+    public void GetBreadPriceTotal_ReturnsBreadPriceTotal_Int()
+    {
+      // Test 13: Test the GetBreadTotal() method
+      
+      Bread newBread = new Bread(3);
+      int result = newBread.BreadPriceTotal;
+      Assert.AreEqual(10, result);
+    }
   } 
   [TestClass]
   public class PastryTests
