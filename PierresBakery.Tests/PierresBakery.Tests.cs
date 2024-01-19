@@ -99,7 +99,24 @@ namespace PierresBakery.Tests
       Pastry newPastry = new Pastry(pastryOrder); 
       int result = newPastry.GetPastryPrice(pastryOrder);
       Assert.AreEqual(2, result);
-
+    }
+    [TestMethod]
+    public void GetPastryPrice_ReturnsPastryPriceWithDiscountDivisbleBy4_Int()
+    {
+      // Test 11
+      int pastryOrder = 4;
+      Pastry newPastry = new Pastry(pastryOrder);
+      int result = newPastry.GetPastryPrice(pastryOrder);
+      Assert.AreEqual(6, result);
+    }
+    [TestMethod]
+    public void GetPastryPrice_ReturnsPastryPriceWithDiscountNotDivisibleBy4_Int2()
+    {
+      // Test 12
+      int pastryOrder = 33;
+      Pastry newPastry = new Pastry(pastryOrder);
+      int result = newPastry.GetPastryPrice(pastryOrder);
+      Assert.AreEqual(52, result);
     }
   }
 }
