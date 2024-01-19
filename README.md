@@ -16,8 +16,8 @@
 ## Setup/Installation Requirements
 
 * Open terminal or command prompt.
-* Clone the repository by running the following command to your desktop: git clone https://github.com/MonBoza/project.git
-* Make sure .gitignore is added to repository.
+* Clone the repository by running the following command to your desktop: git clone https://github.com/MonBoza/PierresBakery.Solution.git
+* Make sure .gitignore is added to repository by running <code>git add .gitignore</code> 
 * Run <code> dotnet build</code> in your terminal
 * Run test by navigating to the test directory and running <code>dotnet restore</code> and then <code>dotnet test</code>
 * Tests are located in Project.Test directory.

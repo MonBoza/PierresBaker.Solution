@@ -1,10 +1,14 @@
+using System;
+
 namespace PierresBakery.Models
 {
   public class Bread
   {
-   public Bread()
+    public int BreadOrder { get; }
+
+    public Bread(int breadOrder)
     {
-      // Constructor
+      BreadOrder = breadOrder;
     }
   }
 }
