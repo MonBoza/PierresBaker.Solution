@@ -20,5 +20,13 @@ namespace PierresBakery.Tests
       int result = newBread.BreadOrder;
       Assert.AreEqual(breadOrder, result);
     }
+    public void SetBread_ReturnsBread_Void()
+    {
+      Bread newBread = new Bread(1);
+      int updatedBreadOrder = 2;
+      newBread.BreadOrder = updatedBreadOrder;
+      int result = newBread.BreadOrder;
+      Assert.AreEqual(updatedBreadOrder, result);
+    }
   }
 }
