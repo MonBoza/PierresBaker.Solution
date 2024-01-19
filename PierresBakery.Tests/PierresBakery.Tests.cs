@@ -126,5 +126,13 @@ namespace PierresBakery.Tests
       int result = newPastry.GetPastryPrice(pastryOrder);
       Assert.AreEqual(52, result);
     }
+    [TestMethod]
+    public void GetPastryPriceTotal_ReturnsPastryPriceTotal_Int()
+    {
+      // Test 14
+      Pastry newPastry = new Pastry(4);
+      int result = newPastry.PastryPriceTotal;
+      Assert.AreEqual(6, result);
+    }
   }
 }
