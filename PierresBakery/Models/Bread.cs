@@ -16,7 +16,7 @@ namespace PierresBakery.Models
       int breadPrice = 5;
        if (BreadOrder % 3 == 0)
       {
-        // if order is divisible by 3, subtract 5 from every third loaf
+     
         breadPrice = (breadPrice * BreadOrder) - ((BreadOrder / 3) * 5);
       }
       else if (BreadOrder % 3 != 0 && BreadOrder > 3) {

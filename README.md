@@ -9,7 +9,7 @@
 * C#
 * MS TEST
 * .NET
-
+* VScode
 
 ## Description
 This Console app allows users to input desired bread and/or pastry amounts they would like to order and in return the app gives you a total with specified discounts.

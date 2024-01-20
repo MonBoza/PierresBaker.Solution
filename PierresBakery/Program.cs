@@ -19,6 +19,7 @@ namespace PierresBakery.Models
     {
       Console.WriteLine("Would you like to order bread or pastries? Both? (Bread/Pastries/Both/Exit)");
       string userInput = Console.ReadLine().ToLower();
+    
       if (userInput == "bread")
       {
         Console.WriteLine("How many loaves of bread would you like to order?");
@@ -52,7 +53,7 @@ namespace PierresBakery.Models
         }
         else if (userInput2 == "no")
         {
-          // need to work on grandtotal
+          
           NavigateMenu();
         }
         else {
@@ -62,6 +63,7 @@ namespace PierresBakery.Models
       }
       else if (userInput == "exit")
       {
+        
         Console.WriteLine("Thank You for visiting Pierre's Bakery!\n");
       }
       else

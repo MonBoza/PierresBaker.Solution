@@ -23,10 +23,9 @@ namespace PierresBakery.Models
      else if (pastryOrder % 4 != 0 && pastryOrder > 4)
      {
       pastryPrice = (pastryPrice * pastryOrder) - ((pastryOrder / 4) * 2) + (pastryOrder % 4 * 2);
-      // pastry price times pastry Order minus the pastry order divided by 4 times 2 plus remainder of the order times 2
      }
      else{
-      pastryPrice = pastryPrice * pastryOrder;
+      pastryPrice *= pastryOrder;
      }
      return pastryPrice;
     }
