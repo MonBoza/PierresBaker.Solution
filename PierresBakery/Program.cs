@@ -25,7 +25,7 @@ namespace PierresBakery.Models
         Console.WriteLine("How many loaves of bread would you like to order?");
         int breadOrder = int.Parse(Console.ReadLine());
         Bread newBread = new Bread(breadOrder);
-        Console.WriteLine("Your total is $" + newBread.BreadPriceTotal + "\n");
+        Console.WriteLine("Your Bread oder is "+ breadOrder + " and the total is $" + newBread.BreadPriceTotal + "\n");
         NavigateMenu();
       }
       else if (userInput == "pastries")
@@ -33,7 +33,7 @@ namespace PierresBakery.Models
         Console.WriteLine("How many pastries would you like to order?");
         int pastryOrder = int.Parse(Console.ReadLine());
         Pastry newPastry = new Pastry(pastryOrder);
-        Console.WriteLine("Your total is $" + newPastry.PastryPriceTotal + "\n");
+        Console.WriteLine("Your Pastry order is " + pastryOrder + " and the order total is $" + newPastry.PastryPriceTotal + "\n");
         NavigateMenu();
       }
       else if (userInput == "both")
@@ -44,6 +44,7 @@ namespace PierresBakery.Models
         Console.WriteLine("How many pastries would you like to order?");
         int pastryOrder = int.Parse(Console.ReadLine());
         Pastry newPastry = new Pastry(pastryOrder);
+        Console.WriteLine("Your order is " + pastryOrder + " pastries and " + breadOrder + " bread loaves");
         Console.WriteLine("Your total is $" + (newBread.BreadPriceTotal + newPastry.PastryPriceTotal) + "\n");
         Console.WriteLine("Does that complete your order? (Yes/No)");
         string userInput2 = Console.ReadLine().ToLower();
